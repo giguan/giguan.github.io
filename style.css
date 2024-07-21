@@ -62,7 +62,8 @@ body {
 
 .wrapper {
     background-color: #16171d;
-
+    display: flex;
+    justify-content: center;
 }
 
 .content {
