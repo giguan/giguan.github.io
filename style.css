@@ -1,0 +1,104 @@
+
+.wrapper {
+    background-color: #16171d;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    display: flex;
+    font-family: 'Roboto';
+    cursor: pointer;
+}
+
+.box:hover {
+    background-color: #1d1e26;
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.box-in-left,
+.box-in-right {
+    position: relative;
+    width: 200px; /* Adjust as needed */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box-in-left {
+    align-items: flex-start; /* Align items to the left */
+}
+
+.box-in-right {
+    align-items: flex-end; /* Align items to the right */
+}
+
+.box-in-left img,
+.box-in-right img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.box:hover img {
+    transform: scale(1.2);
+    filter: brightness(1.2) contrast(1.2);
+}
+
+.box-in-left .teaminfo,
+.box-in-right .teaminfo
+ {
+    width: 70%;
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; /* Center vertically */
+}
+
+.box:hover .teaminfo .teamname {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    color: #ffcc00;
+}
+
+.box-in-left .big-logo-mask,
+.box-in-right .big-logo-mask
+ {
+    position: absolute;
+    z-index: 2;
+}
+
+.box-in-left .subtract,
+.box-in-left .subtract
+ {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Adjust as needed */
+    height: 100%; /* Adjust as needed */
+    z-index: 1; /* Ensures this image is on top */
+}
+
+.teaminfo .teamlogo {
+    width: 43px;
+    height: 43px;
+    transition: transform 0.3s ease;
+
+}
+
+.box:hover .teaminfo .teamlogo {
+    transform: rotate(360deg);
+}
+
+.teaminfo .teamname {
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Roboto';
+}
+
