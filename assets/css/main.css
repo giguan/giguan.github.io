@@ -1389,7 +1389,8 @@ section,
   bottom: -100%;
   z-index: 3;
   transition: all ease-in-out 0.5s;
-  background: color-mix(in srgb, var(--background-color), transparent 10%);
+  /* background: color-mix(in srgb, var(--background-color), transparent 10%); */
+  background-color: #3c3c3c;
   padding: 15px;
   object-fit: cover;
 }
@@ -2041,7 +2042,7 @@ section,
 }
 
 .portfolio-details .portfolio-info {
-  background-color: var(--surface-color);
+  background-color: #3c3c3c;
   padding: 30px;
   box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
 }
@@ -2065,6 +2066,7 @@ section,
 }
 
 .portfolio-details .portfolio-description {
+  background-color: #3c3c3c;
   padding-top: 30px;
 }
 
@@ -2076,7 +2078,7 @@ section,
 
 .portfolio-details .portfolio-description p {
   padding: 0;
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  color: #fff;
 }
 
 /*--------------------------------------------------------------
